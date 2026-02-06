@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AXOKIT — Projet Éducatif National</title>
+
+<style>
+:root{
+--blue:#0b3c6f;
+--gold:#d4af37;
+--green:#16a34a;
+--bg:#f4f7ff;
+--card:#ffffff;
+--text:#0b1220;
+--radius:18px;
+}
+
+body{
+margin:0;
+font-family:system-ui,Segoe UI,Roboto,Arial;
+background:var(--bg);
+color:var(--text);
+line-height:1.75;
+}
+
+header{
+background:linear-gradient(135deg,#0b3c6f,#051c33);
+color:white;
+padding:45px 20px;
+text-align:center;
+}
+
+header img{height:70px;margin-bottom:12px}
+
+.menu{text-align:center;padding:12px}
+.menu button{
+background:linear-gradient(90deg,#1f4fd8,#0ea5e9);
+color:white;
+border:none;
+padding:10px 22px;
+border-radius:25px;
+font-weight:900;
+margin:6px;
+box-shadow:0 6px 15px rgba(0,0,0,.25);
+cursor:pointer;
+}
+
+section{max-width:1100px;margin:auto;padding:25px 15px}
+
+.card{
+background:var(--card);
+border-radius:var(--radius);
+padding:24px;
+margin-bottom:26px;
+box-shadow:0 14px 38px rgba(0,0,0,.1);
+border-left:6px solid #1f4fd8;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+align-items:center;
+}
+
+img.full{
+width:100%;
+border-radius:14px;
+}
+
+h2{color:#1f4fd8;text-decoration:underline;margin-top:0}
+h3{color:#16a34a;margin-bottom:6px}
+
+.frame{
+border:1px dashed #0ea5e9;
+padding:14px;
+border-radius:14px;
+background:#f8fbff;
+margin:14px 0;
+}
+
+.highlight{
+background:#eef4ff;
+border-left:6px solid var(--gold);
+padding:16px;
+margin:16px 0;
+}
+
+.price{
+display:inline-block;
+background:var(--gold);
+padding:6px 16px;
+border-radius:20px;
+font-weight:900;
+margin:6px 6px 6px 0;
+}
+
+.italic{font-style:italic;color:#0ea5e9}
+.blue{color:#1f4fd8;font-weight:900}
+.green{color:#16a34a;font-weight:900}
+.orange{color:#f59e0b;font-weight:900}
+
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{padding:10px;border-bottom:1px solid #ddd}
+th{background:#eef2ff}
+
+footer{
+background:#111;
+color:#ccc;
+text-align:center;
+padding:30px;
+font-size:13px;
+}
+
+@media print{.menu{display:none}}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logoaxokit.png">
+<h1>PROJET AXOKIT — STATION IA SCIENTIFIQUE (OFFLINE)</h1>
+<p>L’excellence pédagogique scientifique pour Madagascar</p>
+</header>
+
+<div class="menu">
+<button onclick="location.href='index.html'">🏠 Menu principal</button>
+<button onclick="location.href='lettre.html'">📜 Lire la lettre</button>
+<button onclick="location.href='luttefaim.html'">🥣 Soutien petit-déjeuner</button>
+<button onclick="window.print()">📄 Télécharger PDF</button>
+</div>
+
+<section>
+
+<!-- 1 -->
+<div class="card grid">
+<div>
+<h2>1. 🌍 Une vision simple</h2>
+Garantir que chaque collégien et lycéen malgache, public ou privé, accède aux mêmes outils numériques éducatifs basés sur l’intelligence artificielle.
+<div class="italic">Modèle de solidarité éducative nationale.</div>
+
+<div class="frame">
+<span class="blue">Le privé finance.</span><br>
+<span class="green">Le public bénéficie.</span><br>
+<span class="orange">L’État ne paie rien.</span><br>
+➡️ Péréquation nationale éducative.
+</div>
+</div>
+<img src="scolaire.png" class="full">
+</div>
+
+<!-- 2 -->
+<div class="card grid">
+<div>
+<h2>2. 🧪 Technologie</h2>
+<ul>
+<li>IA locale RTX</li>
+<li>Fonctionnement sans Internet</li>
+<li>Maths / Physique / Chimie</li>
+<li>Réponses instantanées</li>
+</ul>
+</div>
+<img src="numerique.png" class="full">
+</div>
+
+<!-- 3 -->
+<div class="card">
+<h2>3. 🏫 Collèges et lycées publics</h2>
+<ul>
+<li>Application Axokit gratuite</li>
+<li>Mises à jour pédagogiques incluses</li>
+<li>Support humain</li>
+<li>IA locale sans internet</li>
+<li>Aucun abonnement logiciel</li>
+</ul>
+Les données restent sur place.<br>
+L’État ne sort pas un ariary pour le logiciel.<br>
+Assistant pédagogique permanent.<br>
+Tuteur scientifique 24h/24.
+</div>
+
+<!-- 4 -->
+<div class="card">
+<h2>4. 🏫 Collèges et lycées privés</h2>
+
+<div class="highlight">
+<strong>Licence annuelle par élève :</strong><br>
+<span class="price">2 €</span>
+<span class="price">5 €</span>
+<span class="price">20 €</span>
+</div>
+
+<ul>
+<li>Maintien de l’infrastructure</li>
+<li>Financement des équipes techniques</li>
+<li>Mises à jour continues</li>
+<li>Service après-vente</li>
+<li>Gratuité totale du secteur public</li>
+</ul>
+
+<div class="italic">Une école sans Axokit devient rapidement dépassée.</div>
+
+<h3>Accès hybride</h3>
+<ul>
+<li>Application Web connectée</li>
+<li>Application Locale installée</li>
+</ul>
+</div>
+
+<!-- 5 -->
+<div class="card">
+<h2>5. 🏛️ Rôle de l’État</h2>
+<ul>
+<li>Officialiser Axokit dans le cursus scolaire</li>
+<li>Autoriser la collecte des licences privées</li>
+<li>Faciliter l’intégration dans les listes scolaires</li>
+</ul>
+<div class="italic">Accord-cadre, aucun engagement budgétaire.</div>
+</div>
+
+<!-- 6 -->
+<div class="card">
+<h2>6. 📈 Pourquoi ce modèle fonctionne</h2>
+<ul>
+<li>Les parents du privé acceptent de payer</li>
+<li>Les enseignants sont soulagés</li>
+<li>Les élèves progressent</li>
+<li>L’État améliore ses indicateurs éducatifs</li>
+<li>Madagascar devient pionnier africain de l’IA éducative</li>
+<li>Système autonome et souverain</li>
+</ul>
+Aucune dépendance extérieure. Aucune subvention internationale.
+</div>
+
+<!-- 7 -->
+<div class="card">
+<h2>7. 🌱 Impact attendu</h2>
+<ul>
+<li>Plus de 1,5 million d’élèves publics bénéficiaires</li>
+<li>Projet autofinancé par ~1 million d’élèves privés</li>
+<li>Amélioration sans charge budgétaire pour l’État</li>
+</ul>
+
+<div class="grid">
+<img src="epp.png" class="full">
+<img src="jeune.png" class="full">
+<img src="lycee.png" class="full">
+</div>
+</div>
+
+<!-- 8 -->
+<div class="card">
+<h2>8. 🧠 Le cœur du projet</h2>
+<div class="highlight">
+Ce n’est pas simplement une innovation technologique.<br>
+<strong>C’est une innovation sociale.</strong><br>
+L’équité est créée par l’architecture économique.
+</div>
+</div>
+
+</section>
+
+<footer>
+AXOKIT — Éducation 3.0 Madagascar
+</footer>
+
+</body>
+</html>
